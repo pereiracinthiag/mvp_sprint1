@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>SGM</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Sistema de Gerenciamento de Medição de Óleo e Gás</h2>
+        </div>
+        <div class="banner">
+            <img src="img/banner.jpg?width=1200&height=630&fit=crop"
+                alt="y">
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="TAG do Medidor:">
+        <input type="text" id="newQuantity" placeholder="Descrição:">
+        <input type="text" id="newPrice" placeholder="Instalação:">
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>TAG</th>
+                <th>Descrição</th>
+                <th>Instalação</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+
+        <div class="certificado_info">
+            <h3>Certificados</h3>
+            <ul id="mycerts">
+            </ul>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+<footer>
+    <p>Author: Cinthia Pereira</p>
+    <p><a href="mailto:pereiracinthiag@gmail.com">pereiracinthiag@gmail.com</a></p>
+  </footer>
+
+</html>
+
+
